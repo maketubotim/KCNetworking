@@ -1,0 +1,6 @@
+framework module KCNetworking {
+  umbrella header "KCNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

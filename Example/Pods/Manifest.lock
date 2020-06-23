@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - KCNetworking (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - KCNetworking (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  KCNetworking:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  KCNetworking: 71155d0cd925ee8d82a0c7714ee64b95b67eb204
+
+PODFILE CHECKSUM: 1ac58b1959aea84771cf692f0d85b50100245536
+
+COCOAPODS: 1.9.1

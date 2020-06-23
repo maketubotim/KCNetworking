@@ -1,0 +1,6 @@
+framework module Pods_KCNetworking_Example {
+  umbrella header "Pods-KCNetworking_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

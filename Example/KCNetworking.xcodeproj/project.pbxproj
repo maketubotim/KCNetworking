@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		090181AFE7DFF77164B1D43F /* Pods-KCNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCNetworking_Example.debug.xcconfig"; path = "Target Support Files/Pods-KCNetworking_Example/Pods-KCNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3BE75E4BF508B921B95FCE7E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3BE75E4BF508B921B95FCE7E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		406CFC3E3D4031521CFC7CDD /* Pods-KCNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCNetworking_Example.release.xcconfig"; path = "Target Support Files/Pods-KCNetworking_Example/Pods-KCNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* KCNetworking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KCNetworking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,8 +63,8 @@
 		784F4A27FB984A6BE6BDD229 /* Pods-KCNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCNetworking_Tests.release.xcconfig"; path = "Target Support Files/Pods-KCNetworking_Tests/Pods-KCNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		83BBB5B2A905674A423CD376 /* Pods_KCNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KCNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		88D0415808FC55B2DE65381D /* KCNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KCNetworking.podspec; path = ../KCNetworking.podspec; sourceTree = "<group>"; };
-		ABAA6846D5AC28764E857A95 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		88D0415808FC55B2DE65381D /* KCNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KCNetworking.podspec; path = ../KCNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ABAA6846D5AC28764E857A95 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FD3C7B473BC746F268D6394E /* Pods_KCNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KCNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFCF5BCE9047D3194460C650 /* Pods-KCNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCNetworking_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KCNetworking_Tests/Pods-KCNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				FFCF5BCE9047D3194460C650 /* Pods-KCNetworking_Tests.debug.xcconfig */,
 				784F4A27FB984A6BE6BDD229 /* Pods-KCNetworking_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = maketubotim;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = PF7Y79Q6R5;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -325,10 +328,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KCNetworking_Example/Pods-KCNetworking_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/KCNetworking/KCNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KCNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +518,7 @@
 			baseConfigurationReference = 090181AFE7DFF77164B1D43F /* Pods-KCNetworking_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PF7Y79Q6R5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KCNetworking/KCNetworking-Prefix.pch";
 				INFOPLIST_FILE = "KCNetworking/KCNetworking-Info.plist";
@@ -529,6 +535,7 @@
 			baseConfigurationReference = 406CFC3E3D4031521CFC7CDD /* Pods-KCNetworking_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PF7Y79Q6R5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KCNetworking/KCNetworking-Prefix.pch";
 				INFOPLIST_FILE = "KCNetworking/KCNetworking-Info.plist";

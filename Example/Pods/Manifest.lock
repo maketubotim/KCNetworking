@@ -21,6 +21,8 @@ PODS:
     - FBSnapshotTestCase/Core
   - KCNetworking (0.0.1):
     - AFNetworking
+    - YYCache
+  - YYCache (1.0.4)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -30,6 +32,7 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - FBSnapshotTestCase
+    - YYCache
 
 EXTERNAL SOURCES:
   KCNetworking:
@@ -38,7 +41,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  KCNetworking: 5264c7d4974eacd86eff42c89ab7a013ed57488d
+  KCNetworking: 2243a3956c55838958ba3d2327b83a63bea95866
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
 PODFILE CHECKSUM: 1ac58b1959aea84771cf692f0d85b50100245536
 
